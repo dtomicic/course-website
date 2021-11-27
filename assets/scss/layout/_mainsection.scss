@@ -1,0 +1,46 @@
+.section__main {
+  display: flex;
+  flex-direction: column;
+
+
+  &-heading {
+    position: absolute;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: $ubuntu;
+    font-weight: 500;
+    font-size: toRem(27);
+  }
+
+  &-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url(/assets/img/mainpicture.png);
+    background-size: cover;
+    height: toRem(300);
+    width: 100%;
+    border-bottom: 1px solid $main-color;
+  }
+}
+
+@media (min-width: $break-mobile) {
+  .section__main-heading {
+    font-size: toRem(45);
+  }
+
+  .section__main-image {
+    height: toRem(500);
+  }
+}
+
+@media (min-width: $break-1150) {
+  .section__main-heading {
+    font-size: toRem(55);
+  }
+
+  .section__main-image {
+    height: toRem(600);
+  }
+}
