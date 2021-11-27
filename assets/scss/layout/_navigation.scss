@@ -1,0 +1,77 @@
+.navbar {
+  display: flex;
+  background-color: $complimentary-color;
+  padding-top: toRem(10);
+  padding-bottom: toRem(10);
+  padding-left: toRem(30);
+  justify-content: space-between;
+
+  &__link-logoimg {
+    width: toRem(110);
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: toRem(30);
+    font-family: $ubuntu;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    a {
+      color: $secondary-color;
+      padding: toRem(10);
+    }
+
+    a:hover {
+      background-color: $main-color;
+      padding: toRem(27) toRem(10) toRem(27) toRem(10);
+      transition: 0.4s ease-in-out;
+    }
+  }
+
+  &__items-right {
+    display: flex;
+    align-items: center;
+    margin-right: toRem(30);
+  }
+
+  &__link-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: $break-mobile) {
+  .navbar {
+    flex-direction: column;
+
+    &__link-toggle {
+      display: initial;
+      margin-right: 40px;
+      cursor: pointer;
+      font-size: toRem(22);
+    }
+
+    &__mobile {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__links {
+      flex-direction: column;
+      margin-top: toRem(20);
+      margin-bottom: toRem(20);
+    }
+
+    &__items-right {
+      justify-content: center;
+    }
+  }
+
+  #navbar__links {
+    display: none;
+    transition: 1s ease;
+  }
+}
