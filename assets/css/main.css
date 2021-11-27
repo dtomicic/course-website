@@ -55,6 +55,12 @@
   display: none;
 }
 
+#navbar__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media (max-width: 768px) {
   .navbar {
     -webkit-box-orient: vertical;

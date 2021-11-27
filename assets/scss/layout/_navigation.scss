@@ -41,6 +41,10 @@
   }
 }
 
+#navbar__links {
+  display: flex;
+}
+
 @media (max-width: $break-mobile) {
   .navbar {
     flex-direction: column;
