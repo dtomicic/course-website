@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -156,6 +157,97 @@
   }
   .section__main-image {
     height: 37.5rem;
+  }
+}
+
+.section__second {
+  background: #F67B08;
+  width: 100%;
+}
+
+.section__second-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section__second-heading {
+  font-family: "Ubuntu";
+  margin-top: 1.5625rem;
+}
+
+.section__second-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.section__second-main--picture {
+  width: 10.625rem;
+  margin-bottom: 3.125rem;
+}
+
+.section__second-main--paragraph {
+  text-align: center;
+  width: 80%;
+  padding: 1.875rem;
+  margin-bottom: 0.9375rem;
+  margin-top: 0.3125rem;
+  font-family: "Lato";
+  font-weight: 400;
+  color: #1C1C1C;
+}
+
+@media (min-width: 768px) {
+  .section__second-main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 1.875rem;
+  }
+  .section__second-main--picture {
+    padding: 0.625rem;
+    margin-bottom: 0;
+  }
+  .section__second-main--paragraph {
+    width: 65%;
+    padding: 3.125rem;
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1150px) {
+  .section__second-main {
+    padding-bottom: 3.75rem;
+  }
+  .section__second-main--paragraph {
+    width: 30%;
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    margin-right: 5.625rem;
+    text-align: left;
+  }
+  .section__second-main--picture {
+    width: 18.75rem;
+  }
+  .section__second-heading {
+    font-size: 2.5rem;
+    margin-bottom: 3.125rem;
   }
 }
 
