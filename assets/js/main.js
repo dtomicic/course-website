@@ -1,10 +1,7 @@
 //Nav function
-function toggleNav() {
-  var links = document.getElementById('navbar__links');
-  if(links.style.display == 'flex'){
-    links.style.display = 'none';
-  }
-  else {
-    links.style.display = 'flex'; 
-  }
-}
+var toggleIcon = document.getElementById('navbar__link-toggle');
+var navLinks = document.getElementById('navbar__links');
+
+toggleIcon.addEventListener('click', function() {
+  navLinks.classList.toggle('nav-open');
+});

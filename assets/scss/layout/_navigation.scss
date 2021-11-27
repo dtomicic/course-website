@@ -41,10 +41,6 @@
   }
 }
 
-#navbar__links {
-  display: flex;
-}
-
 @media (max-width: $break-mobile) {
   .navbar {
     flex-direction: column;
@@ -64,6 +60,7 @@
     }
 
     &__links {
+      display: none;
       flex-direction: column;
       margin-top: toRem(20);
       margin-bottom: toRem(20);
@@ -71,11 +68,12 @@
 
     &__items-right {
       justify-content: center;
-    }
-  }
 
-  #navbar__links {
-    display: none;
-    transition: 1s ease;
+      &.nav-open {
+        .navbar__links {
+          display: flex;
+        }
+      }
+    }
   }
 }
