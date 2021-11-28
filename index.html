@@ -28,8 +28,8 @@
       
     <div class="navbar__items-right" id="navbar__links">
       <ul class="navbar__links" >
-        <li class="navbar__link"><a href="/">O nama</a></li>
-        <li class="navbar__link"><a href="/">Kontakt</a></li>
+        <li class="navbar__link"><a href="#about">O nama</a></li>
+        <li class="navbar__link"><a href="#contact">Kontakt</a></li>
         <li class="navbar__link"><a href="/">Tečajevi</a></li>
       </ul>
     </div>
@@ -42,13 +42,30 @@
     </div>
   </section>
 
-  <section class="section__second">
+  <section class="section__second" id="about">
     <div class="section__second-header">
       <h2 class="section__second-heading">O NAMA</h2>
     </div>
     <div class="section__second-main">
-      <p class="section__second-main--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, fugit. Eos porro a fugiat iure, reiciendis cumque natus repellat mollitia architecto amet debitis perferendis veritatis dolorum repudiandae ipsam facere non temporibus!</p>
+      <p class="section__second-main--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, fugit. Eos porro a fugiat iure, reiciendis cumque natus repellat mollitia architecto amet debitis perferendis veritatis dolorum repudiandae ipsam facere non temporibu!</p>
       <img src="/assets/img/teamimg.jpeg" alt="Slika naseg tima" class="section__second-main--picture">
+    </div>
+  </section>
+
+  <section class="section__third" id="contact">
+    <div class="section__third-header">
+      <h2 class="section__third-heading">KONTAKT</h2>
+    </div>
+    <div class="section__third-main">
+      <form class="section__third-form">
+        <label for="name" class="section__third-label">Ime:</label><br>
+        <input type="text" class="section__third-input"><br><br>
+        <label for="email" class="section__third-label">Email*:</label><br>
+        <input type="email" class="section__third-input" required><br><br>
+        <label for="textmsg" class="section__third-label">Vaša poruka*:</label><br>
+        <textarea class="section__third-textinput" cols="25" rows="5" required></textarea><br><br>
+        <input type="submit" value="Pošalji" class="section__third-submitbtn">
+      </form>
     </div>
   </section>
 

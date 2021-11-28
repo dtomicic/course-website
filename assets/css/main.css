@@ -31,7 +31,7 @@
 }
 
 .navbar__links a {
-  color: #1C1C1C;
+  color: #272727;
   padding: 0.625rem;
 }
 
@@ -206,7 +206,7 @@
   margin-top: 0.3125rem;
   font-family: "Lato";
   font-weight: 400;
-  color: #1C1C1C;
+  color: #272727;
 }
 
 @media (min-width: 768px) {
@@ -248,6 +248,89 @@
   .section__second-heading {
     font-size: 2.5rem;
     margin-bottom: 3.125rem;
+  }
+}
+
+.section__third {
+  background-color: #272727;
+}
+
+.section__third-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section__third-heading {
+  color: #F67B08;
+  font-family: "Ubuntu";
+  margin-top: 1.5625rem;
+}
+
+.section__third-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.875rem;
+  padding-bottom: 3.125rem;
+}
+
+.section__third-label {
+  font-family: "Lato";
+  color: #F67B08;
+}
+
+.section__third-input {
+  padding: 0.3125rem;
+  margin-top: 0.625rem;
+}
+
+.section__third-textinput {
+  margin-top: 0.625rem;
+}
+
+.section__third-submitbtn {
+  padding: 0.625rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .section__third-main {
+    padding-bottom: 3.75rem;
+  }
+  .section__third-heading {
+    font-size: 2.5rem;
+  }
+  .section__third-label {
+    font-size: 1.1875rem;
+  }
+  .section__third-input {
+    width: 25rem;
+  }
+  .section__third-textinput {
+    width: 25rem;
+  }
+}
+
+@media (min-width: 1150px) {
+  .section__third-input {
+    width: 50rem;
+  }
+  .section__third-textinput {
+    width: 50rem;
   }
 }
 
