@@ -28,6 +28,7 @@
   font-family: "Ubuntu";
   text-transform: uppercase;
   font-weight: 400;
+  list-style: none;
 }
 
 .navbar__links a {
@@ -92,6 +93,7 @@
             flex-direction: column;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
+    list-style: none;
   }
   .navbar__items-right {
     -webkit-box-pack: center;
@@ -472,6 +474,86 @@
   }
 }
 
+.section__main-image--tecajkuhanja {
+  background: url(/assets/img/tecajkuhanja.png);
+  background-size: cover;
+}
+
+.section__main-image--tecajfitnes {
+  background: url(/assets/img/tecajfitnes.png);
+  background-size: cover;
+}
+
+.section__main-image--tecajmatematika {
+  background: url(/assets/img/tecajmatematike.png);
+  background-size: cover;
+}
+
+.section__main-image--tecajprogramiranje {
+  background: url(/assets/img/tecajprogramiranja.png);
+  background-size: cover;
+}
+
+.section__second-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__second-tecajheading {
+  font-family: "Ubuntu";
+  margin-bottom: 0.625rem;
+  margin-top: 1.875rem;
+}
+
+.section__second-tecajul {
+  list-style: inside;
+  margin-bottom: 0.625rem;
+  font-family: "Lato";
+  list-style: inside;
+}
+
+.section__second-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #272727;
+  padding: 0.625rem;
+  width: 50%;
+  max-width: 31.25rem;
+  margin-bottom: 1.875rem;
+  margin-top: 1.875rem;
+  border-radius: 100px;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.section__second-btn:hover {
+  -webkit-transform: scale(1.2) perspective(0.0625rem);
+          transform: scale(1.2) perspective(0.0625rem);
+}
+
+.section__second-btntext {
+  font-family: "Ubuntu";
+}
+
+.section__second-btntext a {
+  color: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -482,9 +564,5 @@
 a {
   text-decoration: none;
   color: black;
-}
-
-li {
-  list-style: none;
 }
 /*# sourceMappingURL=main.css.map */

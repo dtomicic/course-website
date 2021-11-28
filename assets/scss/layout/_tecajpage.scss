@@ -1,0 +1,68 @@
+.section__main-image {
+  &--tecajkuhanja {
+    background: url(/assets/img/tecajkuhanja.png);
+    background-size: cover;
+  }
+
+  &--tecajfitnes {
+    background: url(/assets/img/tecajfitnes.png);
+    background-size: cover;
+  }
+
+  &--tecajmatematika {
+    background: url(/assets/img/tecajmatematike.png);
+    background-size: cover;
+  }
+
+  &--tecajprogramiranje {
+    background: url(/assets/img/tecajprogramiranja.png);
+    background-size: cover;
+  }
+}
+
+.section__second {
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-tecajheading {
+    font-family: $ubuntu;
+    margin-bottom: toRem(10);
+    margin-top: toRem(30);
+  }
+
+  &-tecajul {
+    list-style: inside;
+    margin-bottom: toRem(10);
+    font-family: $lato;
+    list-style: inside;
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
+    background-color: $secondary-color;
+    padding: toRem(10);
+    width: 50%;
+    max-width: toRem(500);
+    margin-bottom: toRem(30);
+    margin-top: toRem(30);
+    border-radius: 100px;
+    transition: all 0.5s ease-in;
+  }
+
+  &-btn:hover {
+    transform: scale(1.2) perspective(toRem(1));
+  }
+
+  &-btntext {
+    font-family: $ubuntu;
+
+    a {
+      color: white;
+    }
+  }
+}
