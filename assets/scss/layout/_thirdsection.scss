@@ -1,0 +1,74 @@
+.section__third {
+  background-color: $secondary-color;
+
+  &-header {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-heading {
+    color: $main-color;
+    font-family: $ubuntu;
+    margin-top: toRem(25);
+  }
+
+  &-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: toRem(30);
+    padding-bottom: toRem(50);
+  }
+
+  &-label {
+    font-family: $lato;
+    color: $main-color;
+  }
+
+  &-input {
+    padding: toRem(5);
+    margin-top: toRem(10);
+  }
+
+  &-textinput {
+    margin-top: toRem(10);
+  }
+
+  &-submitbtn {
+    padding: toRem(10);
+    width: 100%;
+  }
+}
+
+@media (min-width: $break-mobile) {
+  .section__third-main {
+    padding-bottom: toRem(60);
+  }
+
+  .section__third-heading {
+    font-size: toRem(40);
+  }
+  
+  .section__third-label {
+    font-size: toRem(19);
+  }
+
+  .section__third-input {
+    width: toRem(400);
+  }
+
+  .section__third-textinput {
+    width: toRem(400);
+  }
+}
+
+@media (min-width: $break-1150) {
+  .section__third-input {
+    width: toRem(800);
+  }
+
+  .section__third-textinput {
+    width: toRem(800);
+  }
+}
