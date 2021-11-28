@@ -1,0 +1,111 @@
+.section__fourth {
+  background-color: $main-color;
+
+  &-header {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-heading {
+    color: $secondary-color;
+    font-family: $ubuntu;
+    margin-top: toRem(25);
+  }
+
+  &-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: toRem(50);
+  }
+
+  &-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    background-color: $secondary-color;
+    border: solid 3px white;
+    margin-bottom: toRem(70);
+
+    &--image {
+      width: 100%;
+      border-bottom: 2px solid white;
+    }
+
+    &--heading {
+      color: $main-color;
+      font-family: $ubuntu;
+      margin-top: toRem(15);
+      text-transform: uppercase;
+      letter-spacing: toRem(1);
+    }
+
+    &--paragraph {
+      color: white;
+      font-family: $lato;
+      margin-top: toRem(20);
+      margin-bottom: toRem(28);
+      width: 80%;
+      text-align: center;
+      line-height: toRem(24);
+      font-weight: 300;
+    }
+
+    &--price {
+      color: white;
+      font-family: $ubuntu;
+      margin-bottom: toRem(35);
+    }
+
+    &--btn {
+      display: flex;
+      justify-content: center;
+      background-color: $main-color;
+      padding: toRem(10);
+      width: 50%;
+      margin-bottom: toRem(30);
+      border-radius: 100px;
+      transition: all 0.5s ease-in;
+    }
+
+    &--btn:hover {
+      transform: scale(1.2) perspective(toRem(1));
+
+    }
+
+    &--btntext {
+      font-family: $ubuntu;
+      color: $secondary-color;
+    }
+  }
+}
+
+@media (min-width: $break-mobile) {
+  .section__fourth-heading {
+    font-size: toRem(40);
+  }
+
+  .section__fourth-main {
+    flex-flow: row wrap;
+    gap: 20px;
+  }
+
+  .section__fourth-box {
+    width: 40%;
+  }
+}
+
+@media (min-width: $break-1150) {
+  .section__fourth-box {
+    width: 30%;
+  }
+}
+
+@media (min-width: $break-1500) {
+  .section__fourth-box {
+    width: 20%;
+  }
+}
