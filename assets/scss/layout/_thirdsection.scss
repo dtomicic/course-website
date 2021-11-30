@@ -29,6 +29,7 @@
   &-input {
     padding: toRem(5);
     margin-top: toRem(10);
+    width: toRem(210);
   }
 
   &-textinput {
@@ -55,11 +56,11 @@
   }
 
   .section__third-input {
-    width: toRem(400);
+    width: toRem(500);
   }
 
   .section__third-textinput {
-    width: toRem(400);
+    width: toRem(500);
   }
 }
 

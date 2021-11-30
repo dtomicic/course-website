@@ -137,7 +137,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  background: url(/assets/img/mainpicture.png);
+  background: url(../img/mainpicture.png);
   background-size: cover;
   height: 18.75rem;
   width: 100%;
@@ -298,6 +298,7 @@
 .section__third-input {
   padding: 0.3125rem;
   margin-top: 0.625rem;
+  width: 13.125rem;
 }
 
 .section__third-textinput {
@@ -320,10 +321,10 @@
     font-size: 1.1875rem;
   }
   .section__third-input {
-    width: 25rem;
+    width: 31.25rem;
   }
   .section__third-textinput {
-    width: 25rem;
+    width: 31.25rem;
   }
 }
 
@@ -475,22 +476,22 @@
 }
 
 .section__main-image--tecajkuhanja {
-  background: url(/assets/img/tecajkuhanja.png);
+  background: url(../img/tecajkuhanja.png);
   background-size: cover;
 }
 
 .section__main-image--tecajfitnes {
-  background: url(/assets/img/tecajfitnes.png);
+  background: url(../img/tecajfitnes.png);
   background-size: cover;
 }
 
 .section__main-image--tecajmatematika {
-  background: url(/assets/img/tecajmatematike.png);
+  background: url(../img/tecajmatematike.png);
   background-size: cover;
 }
 
 .section__main-image--tecajprogramiranje {
-  background: url(/assets/img/tecajprogramiranja.png);
+  background: url(../img/tecajprogramiranja.png);
   background-size: cover;
 }
 
